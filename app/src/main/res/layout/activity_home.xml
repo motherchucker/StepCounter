@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/main_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/footprint" />
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step \n \t Counter"
+        android:textSize="46dp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="20dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="Start"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_button"
+        />
+    <Button
+        android:id="@+id/bestResults"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Best results"
+        android:textSize="35dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/main_step"
+        android:background="@drawable/custom_button"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/mapMe"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Where am I?"
+        android:textSize="35dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/bestResults"
+        android:background="@drawable/custom_button"
+        />
+
+</RelativeLayout>
